@@ -3,6 +3,7 @@
 ### Настройка проекта
 Клонируем приложение из репозитория и переходим в него
 ```bash
+git clone https://github.com/Hokage1512/menu_app.git
 cd menu_app
 ```
 
