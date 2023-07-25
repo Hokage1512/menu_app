@@ -3,7 +3,7 @@ from fastapi import FastAPI
 
 from api import dish, menu, submenu
 
-app = FastAPI(title="Restaurant menus")
+app = FastAPI(title="Nyam-nyam menu")
 
 app.include_router(menu.router, prefix="/api/v1/menus", tags=["menus"])
 app.include_router(

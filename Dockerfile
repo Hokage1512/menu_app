@@ -1,14 +1,14 @@
 FROM python:3.11-slim
 
-RUN mkdir /menu_app
+RUN mkdir /app
 
-COPY requirements.txt /menu_app/requirements.txt
+COPY requirements.txt /app/requirements.txt
 
-COPY . /menu_app
+RUN pip install -r /app/requirements.txt --no-cache-dir
 
-RUN pip install -r /menu_app/requirements.txt --no-cache-dir
+COPY . /app
 
-WORKDIR /menu_app
+WORKDIR /app
 
 EXPOSE 8000
 
