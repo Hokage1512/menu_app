@@ -23,7 +23,9 @@ async def get(db: Session = Depends(get_db)) -> List[DishSchemaOut]:
 def create(
     submenu_id: UUID, dish: DishSchemaBase, db: Session = Depends(get_db)
 ) -> DishSchemaOut:
-    _dish = Dish(**dish.dict())
+    dish_dict = dish.dict()
+    dish_dict["price"] = str(dish_dict["price"])
+    _dish = Dish(**dish_dict)
     _dish.submenu_id = submenu_id
     db.add(_dish)
     db.commit()

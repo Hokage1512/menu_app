@@ -23,7 +23,7 @@ class SubmenuSchemaOut(MenuSchemaBase):
 
 
 class DishSchemaBase(MenuSchemaBase):
-    price: str
+    price: Decimal
 
 
 class DishSchemaOut(DishSchemaBase):
