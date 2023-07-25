@@ -1,7 +1,7 @@
 from uuid import UUID
 
 from pydantic import BaseModel
-
+from decimal import Decimal
 
 class MenuSchemaBase(BaseModel):
     title: str
