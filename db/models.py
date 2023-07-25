@@ -8,8 +8,6 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 from db.database import Base
 
 
-Base = declarative_base()
-
 class Menu(Base):
     __tablename__ = "menus"
 
