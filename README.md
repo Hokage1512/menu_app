@@ -10,7 +10,7 @@ cd menu_app
 ### Сборка образов и запуск контейнеров
 В корне репозитория выполните команду:
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 ```
 
 ### Остановка контейнеров
