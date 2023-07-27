@@ -15,7 +15,7 @@ services:
       - net
   db:
     container_name: "db"
-    image: postgres:15.3
+    image: postgres:15.1-alpine
     environment:
         POSTGRES_HOST_AUTH_METHOD: trust
     restart: always
