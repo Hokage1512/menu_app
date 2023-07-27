@@ -18,5 +18,20 @@ docker-compose up --build -d
 ```bash
 docker-compose stop
 ```
+### Запускаем контейнер с приложением и тестовой базой данных
+Для остановки контейнеров выполните команду:
+```bash
+docker-compose --file docker-compose.test.yml up --build -d
+```
+### Запускаем тестирование приложения
+Для остановки контейнеров выполните команду:
+```bash
+docker-compose --file docker-compose.test.yml up app_tests
+```
+### Останавливаем контейнер с приложением и тестовой базой данных
+Для остановки контейнеров выполните команду:
+```bash
+docker-compose --file docker-compose.test.yml stop
+```
 
 Проект доступен по адресу http://127.0.0.1:8000/docs
