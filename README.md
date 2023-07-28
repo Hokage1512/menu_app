@@ -26,7 +26,7 @@ docker-compose --file docker-compose.test.yml up --build -d
 ### Запускаем тестирование приложения
 Для остановки контейнеров выполните команду:
 ```bash
-docker-compose --file docker-compose.test.yml up app_tests
+docker-compose --file docker-compose.test.yml up app_test
 ```
 ### Останавливаем контейнер с приложением и тестовой базой данных
 Для остановки контейнеров выполните команду:
